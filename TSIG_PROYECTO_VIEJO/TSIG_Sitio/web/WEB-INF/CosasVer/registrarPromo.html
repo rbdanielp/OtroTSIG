@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>TSIG</title>
+        <meta charset="utf-8"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.17.1/ol.css" />
+        <link rel="stylesheet" href="https://rawgit.com/walkermatt/ol3-layerswitcher/master/src/ol3-layerswitcher.css" />
+        <link rel="stylesheet" href="https://rawgit.com/walkermatt/ol3-layerswitcher/master/examples/layerswitcher.css" />
+        <link rel="stylesheet" href="https://rawgit.com/walkermatt/ol3-popup/master/src/ol3-popup.css" />
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.16.0/ol.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+
+        <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+        <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.14/proj4.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.16.0/ol.js"></script>
+
+
+
+
+        <!--Fin Barra de navegacion-->
+        <!--Inicio del Registro+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+        <style>
+            #map {
+                clear: both;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+                background-color: #007bff;
+            }
+        </style>
+
+        <script>
+
+            function init() {
+                var bounds = [567000, 6135000,
+                    585000, 6145000];
+                var formatWFS = new ol.format.WFS();
+                //var tipo = document.getElementById('tipo');
+                //var nombre = document.getElementById('nombrePto');
+
+
+                var formatGML = new ol.format.GML({
+                    featureNS: 'www.capatsig.uy',
+                    featureType: 'promocion',
+                    srsName: 'EPSG:32721',
+                    geometryName: 'geometry'
+
+                });
+                var projection = new ol.proj.Projection({
+                    code: 'EPSG:32721',
+                    units: 'm',
+                    axisOrientation: 'neu',
+                    global: false
+                });
+                var xs = new XMLSerializer();
+                var sourceWFS = new ol.source.Vector({
+                    format: new ol.format.GeoJSON(),
+                    loader: function (extent) {
+                        $.ajax('http://localhost:8085/geoserver/wfs', {
+                            type: 'GET',
+                            data: {
+
+                                service: 'WFS',
+                                version: '1.1.0',
+                                request: 'GetFeature',
+                                outputFormat: 'application/json',
+                                typenames: 'capatsig:promocion',
+                                featureNS: 'www.capatsig.uy',
+                                featureType: 'promocion',
+                                srsname: 'EPSG:32721',
+                                geometryName: 'geometry',
+                                bound: '567000, 6135000, 585000, 6145000'
+                            }
+                        }).done(function (response) {
+                            sourceWFS.addFeatures(sourceWFS.getFormat().readFeatures(response));
+                        });
+                    },
+                    //strategy: ol.loadingstrategy.tile(ol.tilegrid.createXYZ()),
+                    strategy: ol.loadingstrategy.bbox,
+                    projection: projection
+                });
+                var layerWFSPoligon = new ol.layer.Vector({
+                    visible: true,
+                    source: sourceWFS,
+                    style: new ol.style.Style({
+
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 255, 255, 0.2)'
+                        }),
+                        stroke: new ol.style.Stroke({
+                            color: '#ffcc33',
+                            width: 2
+                        }),
+                        image: new ol.style.Circle({
+                            radius: 7,
+                            fill: new ol.style.Fill({
+                                color: '#ffcc33'
+                            })
+                        })
+                    })
+
+                });
+                var interaction;
+                var interactionSelectPointerMove = new ol.interaction.Select({
+                    condition: ol.events.condition.pointerMove
+                });
+                var interactionSelect = new ol.interaction.Select({
+                    style: new ol.style.Style({
+                        stroke: new ol.style.Stroke({
+                            color: '#FF2828'
+                        })
+                    })
+                });
+                var interactionSnap = new ol.interaction.Snap({
+                    source: layerWFSPoligon.getSource()
+                });
+                var calles = new ol.layer.Tile({
+                    visible: true,
+                    source: new ol.source.TileWMS({
+                        url: 'http://localhost:8085/geoserver/wms?',
+                        params: {
+                            'FORMAT': "image/jpeg",
+                            'VERSION': '1.1.1',
+                            tiled: true,
+                            STYLES: '',
+                            LAYERS: 'capatsig:manzanas,capatsig:calles,capatsig:pois'
+                                    //srsname: 'EPSG:32721',
+                                    //bound: '567000, 6135000, 585000, 6145000',
+                                    //tilesOrigin: 567000 + "," + 6135000
+                                    //opaque: false,
+                                    //  attributions: []
+                        }
+                    })
+                });
+
+                var sourceWFSP = new ol.source.Vector({
+                    format: new ol.format.GeoJSON(),
+                    loader: function (extent) {
+                        $.ajax('http://localhost:8085/geoserver/wfs', {
+                            type: 'GET',
+                            data: {
+
+                                service: 'WFS',
+                                version: '1.1.0',
+                                request: 'GetFeature',
+                                outputFormat: 'application/json',
+                                typenames: 'capatsig:pois',
+                                featureNS: 'www.capatsig.uy',
+                                featureType: 'pois',
+                                srsname: 'EPSG:32721',
+                                geometryName: 'geometry',
+                                bound: '567000, 6135000, 585000, 6145000'
+                            }
+                        }).done(function (response) {
+                            sourceWFS.addFeatures(sourceWFS.getFormat().readFeatures(response));
+                        });
+                    },
+                    //strategy: ol.loadingstrategy.tile(ol.tilegrid.createXYZ()),
+                    strategy: ol.loadingstrategy.bbox,
+                    projection: projection
+                });
+
+                var layerWFSPoint = new ol.layer.Vector({
+                    visible: true,
+                    source: sourceWFSP,
+                    style: new ol.style.Style({
+                        fill: new ol.style.Fill({
+                            color: 'rgba(255, 255, 255, 0.2)'
+                        }),
+                        stroke: new ol.style.Stroke({
+                            color: '#ffcc33',
+                            width: 2
+                        }),
+                        image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+                            anchor: [0.5, 46],
+                            anchorXUnits: 'fraction',
+                            anchorYUnits: 'pixels',
+                            src: '/images/icons8-marker-50.png'
+                        }))
+                    })
+
+
+                });
+                var map = new ol.Map({
+                    target: 'map',
+                    controls: [],
+                    interactions: [
+                        interactionSelectPointerMove,
+                        new ol.interaction.MouseWheelZoom(),
+                        new ol.interaction.DragPan()
+                    ],
+                    layers: [
+
+                        new ol.layer.Image({
+                            visible: true,
+                            source: new ol.source.ImageWMS({
+                                url: 'http://localhost:8085/geoserver/wms?',
+                                params: {
+                                    'FORMAT': "image/png",
+                                    'VERSION': '1.1.1',
+
+                                    style: '',
+                                    LAYERS: 'capatsig:montevideo',
+                                    srsname: 'EPSG:32721',
+                                    bound: '567000, 6135000, 585000, 6145000',
+                                    tilesOrigin: 567000 + "," + 6135000,
+                                    //opaque: false
+                                    //  attributions: []
+                                }
+                            })
+                        }),
+                        calles, layerWFSPoint, layerWFSPoligon
+                    ],
+                    view: new ol.View({
+                        projection: projection
+                    })
+                });
+
+                var bounds = [567000, 6135000, 585000, 6145000];
+                map.getView().fit(bounds, map.getSize());
+                var barcito;
+
+
+
+                map.on('singleclick', function (event) {
+                    map.forEachFeatureAtPixel(event.pixel, function (feature) {
+                        barcito = feature;
+                    });
+                });
+
+                /*  // feature is an instance of ol.Feature
+                 var featureBuffer;
+                 // convert the OpenLayers geometry to a JSTS geometry
+                 var jstsGeom = parser.read(featureBuffer.getGeometry());
+                 // create a buffer of 40 meters around each line
+                 var buffered = jstsGeom.buffer(500);
+                 // convert back from JSTS and replace the geometry on the feature
+                 featureBuffer.setGeometry(parser.write(buffered));
+                 
+                 var polyPrueba = turf.polygon(sourseWFS);
+                 
+                 var intersection = turf.intersect(pt1, linestring1); **/
+                var pointSelect;
+                var pointCoord;
+                map.on('dblclick', function (event) {
+
+                    map.forEachFeatureAtPixel(event.pixel, function (feature) {
+                        pointSelect = feature;
+                        pointCoord = turf.point(feature.getGeometry().getCoordinates());
+                        console.log(pointSelect);
+
+                    });
+                });
+
+
+//wfs-t
+                var dirty = {};
+                var transactWFS = function (mode, f) {
+                    var node;
+                    switch (mode) {
+                        case 'insert':
+                            node = formatWFS.writeTransaction([f], null, null, formatGML);
+                            break;
+                        case 'update':
+                            node = formatWFS.writeTransaction(null, [f], null, formatGML);
+                            break;
+                        case 'delete':
+                            node = formatWFS.writeTransaction(null, null, [f], formatGML);
+                            break;
+                    }
+                    var payload = xs.serializeToString(node);
+                    $.ajax('http://localhost:8085/geoserver/wfs', {
+                        type: 'POST',
+                        dataType: 'xml',
+                        processData: true,
+                        contentType: 'text/xml',
+                        data: payload
+                    }).done(function () {
+                        sourceWFS.clear();
+                    });
+                };
+                $('button').click(function () {
+                    $(this).siblings().removeClass('btn-active');
+                    $(this).addClass('btn-active');
+                    map.removeInteraction(interaction);
+                    interactionSelect.getFeatures().clear();
+                    map.removeInteraction(interactionSelect);
+                    switch ($(this).attr('id')) {
+
+                        case 'btnEdit':
+                            map.addInteraction(interactionSelect);
+                            interaction = new ol.interaction.Modify({
+                                features: interactionSelect.getFeatures()
+                            });
+                            map.addInteraction(interaction);
+                            map.addInteraction(interactionSnap);
+                            dirty = {};
+                            interactionSelect.getFeatures().on('add', function (e) {
+                                e.element.on('change', function (e) {
+                                    dirty[e.target.getId()] = true;
+                                });
+                            });
+                            interactionSelect.getFeatures().on('remove', function (e) {
+                                var f = e.element;
+                                if (dirty[f.getId()]) {
+                                    delete dirty[f.getId()];
+                                    var featureProperties = f.getProperties();
+                                    delete featureProperties.boundedBy;
+                                    var clone = new ol.Feature(featureProperties);
+                                    clone.setId(f.getId());
+                                    transactWFS('update', clone);
+                                }
+                            });
+                            break;
+                        case 'btnPoint':
+
+                            interaction = new ol.interaction.Draw({
+                                type: 'Point',
+                                // source: layerWFS.getSource(),
+                                geometryName: 'geometry'
+                            });
+                            map.addInteraction(interaction);
+                            interaction.on('drawend', function (e) {
+                                var myAttrValueNom = document.getElementById('nombrePto').value;
+                                var myAttrValueTipo = document.getElementById('tipo').value;
+                                var myFeature = e.feature;
+                                myFeature.set('nombre', myAttrValueNom);
+                                myFeature.set('dtype', myAttrValueTipo);
+                                transactWFS('insert', myFeature);
+                            });
+                            break;
+                        case 'btnLine':
+                            interaction = new ol.interaction.Draw({
+                                type: 'LineString',
+                                // source: layerWFS.getSource()
+                            });
+                            map.addInteraction(interaction);
+                            interaction.on('drawend', function (e) {
+                                transactWFS('insert', e.feature);
+                            });
+                            break;
+                        case 'btnArea':
+                            interaction = new ol.interaction.Draw({
+                                type: 'Polygon',
+                                source: layerWFSPoligon.getSource(),
+                                geometryName: 'geometry'
+
+                            });
+                            interaction.on('drawend', function (e) {
+                                var myAttrValueProm = document.getElementById('promocion').value;
+                                var myFeature = e.feature;
+                                var geom = turf.polygon(e.feature.getGeometry().getCoordinates());
+
+                                var intersection = turf.intersect(pointCoord, geom);
+                                //var intersection = turf.intersect(pointSelect, myFeature);
+                                var nombreP = pointSelect.get('nombre');
+                                console.log(intersection);
+                                if (intersection) {
+                                    myFeature.set('detalle', myAttrValueProm);
+                                    myFeature.set('poi_nombre', nombreP);
+                                    transactWFS('insert', myFeature);
+                                } else {
+                                    alert("LA PROMOCIÓN NO PERTECE AL PUNTO ELEGIDO");
+                                    interactionSelectPointerMove.getFeatures().clear();
+                                    myFeature.clear();
+
+                                }
+                            });
+                            map.addInteraction(interaction);
+                            break;
+                        case 'btnDelete':
+                            interaction = new ol.interaction.Select();
+                            interaction.getFeatures().on('add', function (e) {
+                                transactWFS('delete', e.target.item(0));
+                                interactionSelectPointerMove.getFeatures().clear();
+                                interaction.getFeatures().clear();
+                            });
+                            map.addInteraction(interaction);
+                            break;
+                        default:
+                            break;
+                    }
+                });
+            }
+
+        </script>
+    </head> 
+    <body onload="init()" style="text-align: start" >
+        <!--Inicio Barra de navegacion-->
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" style="color: #ffffff">MUNDIALISTA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link"  href= "index.jsp">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <h1 class = "badge-info">Bienvenido </h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+
+
+
+
+                        <h3 style=" background-color:dodgerblue; color: #ffffff">Registro de Promociones</h3>
+
+
+                        <label style="background-color:dodgerblue; color: #ffffff ">Descripción de Promoción</label>
+
+
+
+                        <div class="form-group input-group" style=" height: 100px;width: 100%; align-content: space-between">
+                            <input id="promocion" type="text" class ="form-control" 
+                                   name ="promocion" placeholder="Promocion" required
+                                   >
+                        </div>
+
+                        <label style="background-color:dodgerblue; color: #ffffff ">Elija Punto Referente a Promoción</label>
+                        <!--
+                               <div class="form-group input-group" style="width: 100%; align-content: center">
+                                   <input type="text" class="form-control" name="puntaje"  placeholder="Puntaje..." required id="puntaje"/>
+                               </div>
+
+
+                               <div class="form-group input-group" style=" height: 100px;width: 100%; align-content: space-between">
+                                   <input id="comentario" type="text" class ="form-control" 
+                                          name ="comentario" placeholder="Comentario" required
+                                          >
+                               </div> 
+
+
+                        <div id="camposErroneo" class="alert alert-danger" role="alert">
+                            Existe algún campo vacío o NO válido
+                        </div> -->
+
+                    </div >
+                </div>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+        <div class="form-group input-group" style="width: 40%; align-content: stretch">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <button id="btnArea" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                <i class="material-icons">signal_cellular_null</i>
+            </button>
+        </div>
+
+        <!--Fin Registro +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    </body>
+</html>
+
+

@@ -1,0 +1,171 @@
+05-Jun-2018 19:12:32.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.27
+05-Jun-2018 19:12:32.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2015 08:17:25 UTC
+05-Jun-2018 19:12:32.617 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.27.0
+05-Jun-2018 19:12:32.618 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+05-Jun-2018 19:12:32.619 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-127-generic
+05-Jun-2018 19:12:32.620 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+05-Jun-2018 19:12:32.621 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/diego/jdk1.8.0_171/jre
+05-Jun-2018 19:12:32.622 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-b11
+05-Jun-2018 19:12:32.623 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+05-Jun-2018 19:12:32.626 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27
+05-Jun-2018 19:12:32.627 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27
+05-Jun-2018 19:12:32.629 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/logging.properties
+05-Jun-2018 19:12:32.630 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Jun-2018 19:12:32.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dhttp.nonProxyHosts=localhost|127.0.0.1|diego-RV410-RV510-S3510-E3510
+05-Jun-2018 19:12:32.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/endorsed
+05-Jun-2018 19:12:32.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27
+05-Jun-2018 19:12:32.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27
+05-Jun-2018 19:12:32.635 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/temp
+05-Jun-2018 19:12:32.637 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /home/diego/jdk1.8.0_171/jre/lib/amd64:/home/diego/jdk1.8.0_171/jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+05-Jun-2018 19:12:33.502 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+05-Jun-2018 19:12:33.669 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2018 19:12:33.683 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+05-Jun-2018 19:12:33.690 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+05-Jun-2018 19:12:33.692 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 3895 ms
+05-Jun-2018 19:12:34.022 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+05-Jun-2018 19:12:34.022 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.27
+05-Jun-2018 19:12:34.116 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 19:12:34.224 WARNING [localhost-startStop-1] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 19:12:42.731 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+05-Jun-2018 19:12:43.260 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 9.139 ms
+05-Jun-2018 19:12:43.315 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/geoserver.war de la aplicación web
+05-Jun-2018 19:13:02.667 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+05-Jun-2018 19:13:04.964 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'XStreamPersisterInitializer', but ApplicationContext is unset.
+05-Jun-2018 19:13:04.965 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+05-Jun-2018 19:13:04.973 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+05-Jun-2018 19:13:04.974 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+05-Jun-2018 19:13:10.819 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'GeoServerSecurityProvider', but ApplicationContext is unset.
+05-Jun-2018 19:13:10.819 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+05-Jun-2018 19:13:10.820 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionProvider', but ApplicationContext is unset.
+05-Jun-2018 19:13:10.820 WARNING [localhost-startStop-1] org.geoserver.platform.GeoServerExtensions.checkContext Extension lookup 'ExtensionFilter', but ApplicationContext is unset.
+05-Jun-2018 19:13:43.334 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/geoserver.war has finished in 60.019 ms
+05-Jun-2018 19:13:43.339 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/docs de la aplicación web
+05-Jun-2018 19:13:43.416 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/docs has finished in 77 ms
+05-Jun-2018 19:13:43.417 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/examples de la aplicación web
+05-Jun-2018 19:13:44.329 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/examples has finished in 912 ms
+05-Jun-2018 19:13:44.331 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/manager de la aplicación web
+05-Jun-2018 19:13:44.506 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/manager has finished in 175 ms
+05-Jun-2018 19:13:44.510 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/host-manager de la aplicación web
+05-Jun-2018 19:13:44.625 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/webapps/host-manager has finished in 114 ms
+05-Jun-2018 19:13:44.653 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+05-Jun-2018 19:13:44.720 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+05-Jun-2018 19:13:44.762 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 71069 ms
+05-Jun-2018 19:26:05.343 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+05-Jun-2018 19:26:05.459 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 19:26:05.467 WARNING [localhost-startStop-2] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 19:26:05.478 SEVERE [localhost-startStop-2] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:586)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1780)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@5a6a156c]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4854)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4984)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/home/diego/Escritorio/PruebaMapa/tsigg12/TSIG_Sitio/build/web] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:723)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:684)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 more
+
+05-Jun-2018 19:26:05.482 SEVERE [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Error durante el despliegue del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:729)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:586)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1780)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2018 19:26:05.482 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 23 ms
+05-Jun-2018 19:42:36.854 INFO [http-nio-8085-exec-33] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+05-Jun-2018 19:42:36.886 INFO [http-nio-8085-exec-29] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 19:42:36.887 WARNING [http-nio-8085-exec-29] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 19:42:39.382 INFO [http-nio-8085-exec-29] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 2.496 ms
+05-Jun-2018 19:42:39.393 INFO [http-nio-8085-exec-32] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+05-Jun-2018 19:42:50.848 WARNING [http-nio-8085-exec-37] java.util.prefs.FileSystemPreferences$6.run Prefs file removed in background /home/diego/.java/.userPrefs/org/geotools/referencing/wkt/prefs.xml
+05-Jun-2018 19:43:52.474 WARNING [http-nio-8085-exec-41] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+05-Jun-2018 19:43:53.002 INFO [http-nio-8085-exec-41] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+05-Jun-2018 19:43:53.020 INFO [http-nio-8085-exec-39] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 19:43:53.022 WARNING [http-nio-8085-exec-39] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 19:43:54.839 INFO [http-nio-8085-exec-39] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 1.819 ms
+05-Jun-2018 19:43:54.859 INFO [http-nio-8085-exec-46] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+05-Jun-2018 21:37:14.148 WARNING [http-nio-8085-exec-47] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+05-Jun-2018 21:37:17.569 INFO [http-nio-8085-exec-47] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+05-Jun-2018 21:37:18.148 INFO [http-nio-8085-exec-51] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 21:37:19.430 WARNING [http-nio-8085-exec-51] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 21:37:58.148 INFO [http-nio-8085-exec-51] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 40.015 ms
+05-Jun-2018 21:37:58.161 INFO [http-nio-8085-exec-55] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+05-Jun-2018 23:19:59.950 INFO [http-nio-8085-exec-65] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+05-Jun-2018 23:22:17.495 INFO [http-nio-8085-exec-60] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 23:22:17.577 WARNING [http-nio-8085-exec-60] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 23:22:21.067 INFO [http-nio-8085-exec-60] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 3.571 ms
+05-Jun-2018 23:22:21.079 INFO [http-nio-8085-exec-66] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+05-Jun-2018 23:55:21.043 WARNING [http-nio-8085-exec-69] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+05-Jun-2018 23:55:21.645 INFO [http-nio-8085-exec-69] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+05-Jun-2018 23:55:21.767 INFO [http-nio-8085-exec-74] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 23:55:21.805 WARNING [http-nio-8085-exec-74] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 23:55:27.603 INFO [http-nio-8085-exec-74] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 5.837 ms
+05-Jun-2018 23:55:27.612 INFO [http-nio-8085-exec-70] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+05-Jun-2018 23:56:00.595 INFO [http-nio-8085-exec-80] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+05-Jun-2018 23:56:00.605 INFO [http-nio-8085-exec-77] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+05-Jun-2018 23:56:00.641 WARNING [http-nio-8085-exec-77] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+05-Jun-2018 23:56:02.404 INFO [http-nio-8085-exec-77] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 1.798 ms
+05-Jun-2018 23:56:02.412 INFO [http-nio-8085-exec-70] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+05-Jun-2018 23:59:41.104 INFO [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8085"]
+05-Jun-2018 23:59:41.156 INFO [Thread-8] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+05-Jun-2018 23:59:42.286 INFO [Thread-8] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+05-Jun-2018 23:59:46.155 WARNING [localhost-startStop-3] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+05-Jun-2018 23:59:54.671 INFO [localhost-startStop-3] org.geoserver.GeoserverInitStartupListener.contextDestroyed Beginning GeoServer cleanup sequence
+05-Jun-2018 23:59:54.672 INFO [localhost-startStop-3] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.sqlite.JDBC@4de61245
+05-Jun-2018 23:59:54.672 INFO [localhost-startStop-3] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.hsqldb.jdbc.JDBCDriver@26fec624
+05-Jun-2018 23:59:54.672 INFO [localhost-startStop-3] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.h2.Driver@42c5480f
+05-Jun-2018 23:59:54.673 INFO [localhost-startStop-3] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.postgresql.Driver@395fd1b2
+05-Jun-2018 23:59:54.836 INFO [localhost-startStop-3] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory GeoserverWKTOperationFactory["European Petroleum Survey Group"]
+  COORDINATE_OPERATION_AUTHORITY_FACTORY = PropertyCoordinateOperationAuthorityFactory["European Petroleum Survey Group"]
+    CRS_FACTORY                          = ReferencingObjectFactory                                                      
+    CS_FACTORY                           = (same as CRS_FACTORY)                                                         
+    DATUM_FACTORY                        = DatumAliases                                                                  
+    MATH_TRANSFORM_FACTORY               = DefaultMathTransformFactory                                                   
+
+05-Jun-2018 23:59:54.910 INFO [localhost-startStop-3] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory LongitudeFirstFactory["European Petroleum Survey Group"]
+  FORCE_LONGITUDE_FIRST_AXIS_ORDER           = true                                                          
+  FORCE_STANDARD_AXIS_DIRECTIONS             = false                                                         
+  FORCE_STANDARD_AXIS_UNITS                  = false                                                         
+  CS_AUTHORITY_FACTORY                       = OrderedAxisAuthorityFactory["European Petroleum Survey Group"]
+    DATUM_AUTHORITY_FACTORY                  = ThreadedHsqlEpsgFactory["European Petroleum Survey Group"]    
+      EPSG_DATA_SOURCE                       = java:comp/env/jdbc/EPSG                                       
+      DATUM_AUTHORITY_FACTORY                = FactoryUsingHSQL["European Petroleum Survey Group"]           
+        FORCE_LONGITUDE_FIRST_AXIS_ORDER     = false                                                         
+        FORCE_STANDARD_AXIS_DIRECTIONS       = false                                                         
+        FORCE_STANDARD_AXIS_UNITS            = false                                                         
+        VERSION                              = 8.6                                                           
+        CRS_FACTORY                          = ReferencingObjectFactory                                      
+        CS_FACTORY                           = (same as CRS_FACTORY)                                         
+        DATUM_FACTORY                        = DatumAliases                                                  
+        MATH_TRANSFORM_FACTORY               = DefaultMathTransformFactory                                   
+      CS_AUTHORITY_FACTORY                   = (same as DATUM_AUTHORITY_FACTORY)                             
+      CRS_AUTHORITY_FACTORY                  = (same as DATUM_AUTHORITY_FACTORY)                             
+      COORDINATE_OPERATION_AUTHORITY_FACTORY = (same as DATUM_AUTHORITY_FACTORY)                             
+    CS_AUTHORITY_FACTORY                     = (same as DATUM_AUTHORITY_FACTORY)                             
+    CRS_AUTHORITY_FACTORY                    = (same as DATUM_AUTHORITY_FACTORY)                             
+    COORDINATE_OPERATION_AUTHORITY_FACTORY   = (same as DATUM_AUTHORITY_FACTORY)                             
+    FORCE_STANDARD_AXIS_UNITS                = false                                                         
+    FORCE_STANDARD_AXIS_DIRECTIONS           = false                                                         
+    FORCE_LONGITUDE_FIRST_AXIS_ORDER         = true                                                          
+  CRS_AUTHORITY_FACTORY                      = (same as CS_AUTHORITY_FACTORY)                                
+

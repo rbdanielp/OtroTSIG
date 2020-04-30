@@ -1,0 +1,15 @@
+<layer>
+  <name>espacios_libres</name>
+  <id>LayerInfoImpl-1083d5c6:163c3c38bc6:-7ff4</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe0</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-1083d5c6:163c3c38bc6:-7ff5</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title> puto mapa</title>
+        <link rel="stylesheet" href="Openlayers/openlayers/theme/default/style.css" type="text/css" />
+
+        <style type="text/css">
+            body {
+                margin: 1em;
+            }
+            #map {
+                width: 95%;
+                height: 512px;
+                border: 1px solid gray;
+            }
+            div.olControlMousePosition {
+                color: white;
+            }
+            #bounds {
+                font-size: 0.9em;
+            }
+        </style>
+
+
+        <script src="http://openlayers.org/api/OpenLayers.js"></script>
+        <script type="text/javascript">
+            OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
+            var options = {
+                // the "community" epsg code for spherical mercator
+                projection: "EPSG:32721",
+                // map horizontal units are meters
+                units: "m",
+                // this resolution displays the globe in one 256x256 pixel tile
+                maxResolution: 78271.51695,
+                // these are the bounds of the globe in sperical mercator
+                maxExtent: new OpenLayers.Bounds(-20037508, -20037508,
+                        20037508, 20037508)
+            };
+            var map;
+            function init() {
+                map = new OpenLayers.Map('map', options);
+                var montevideo = new OpenLayers.Layer.WMS(
+                        "Montevideo",
+                        "http://localhost:8080/geoserver/wms/cite",
+                        {layers: 'cite:montevideo',
+                            styles: '',
+                            srs: 'EPSG:32721',
+                            format: 'image/jpeg',
+                            tiled: 'true',
+                            tilesOrigin: 567000 + ", " + 6135000,
+                            transparent: false
+                        },
+                        {
+                            'opacity': 0.75, 'isBaseLayer': true, 'wrapDateLine': true
+                        }
+                );
+                var calles = new OpenLayers.Layer.Vector(
+                        "Calles",
+                        {protocol: new OpenLayers.Protocol.HTTP({
+                                url:"http://localhost:8080/geoserver/wfs/cite"
+                        })
+                        ,
+                        {typename: 'cite:calles'},
+                        {
+                            typename: 'calles',
+                            featureNS: 'http://www.opengeospatial.net/cite',
+                            isBaseLayer: false,
+                            extractAttributes: true
+                        }
+                /* {layers: 'cite:calles',
+                 styles: '',
+                 srs: 'EPSG:32721',
+                 format: 'image/jpeg',
+                 tiled: 'false',
+                 tilesOrigin: 567000 + ", " + 6135000,
+                 transparent: false
+                 },
+                 {
+                 'opacity': 0.75, 'isBaseLayer': false, 'wrapDateLine': true
+                 }*/
+                );
+                /*
+                 var water = new OpenLayers.Layer.WMS(
+                 "Water",
+                 "/geoserver/wms",
+                 {
+                 layers: 'topp:tasmania_water_bodies',
+                 transparent: 'true',
+                 format: 'image/png'
+                 }
+                 );
+                 
+                 var roads = new OpenLayers.Layer.WFS(
+                 "Roads",
+                 "/geoserver/wfs",
+                 {typename: 'topp:tasmania_roads'},
+                 {
+                 typename: 'tasmania_roads',
+                 featureNS: 'http://www.opengeospatial.net/cite',
+                 extractAttributes: false
+                 }
+                 );
+                 roads.style = OpenLayers.Util.applyDefaults({strokeColor: "#ff0000"},
+                 OpenLayers.Feature.Vector.style["default"]);
+                 
+                 var cities = new OpenLayers.Layer.WFS(
+                 "Cities",
+                 "/geoserver/wfs",
+                 {typename: 'topp:tasmania_cities'},
+                 {
+                 typename: 'tasmania_cities',
+                 featureNS: 'http://www.openplans.org/topp',
+                 extractAttributes: false
+                 }
+                 );
+                 cities.style = OpenLayers.Util.applyDefaults({strokeColor: "#0000ff"},
+                 OpenLayers.Feature.Vector.style["default"]);*/
+                var usBounds = new OpenLayers.Bounds(
+                        567000, 6135000, 585000, 6145000
+                        );
+                map.addLayers([montevideo, calles]);
+                map.zoomToExtent(usBounds);
+                /*
+                 
+                 var panel = new OpenLayers.Control.Panel(
+                 {displayClass: 'olControlEditingToolbar'}
+                 );
+                 
+                 var drawLine = new OpenLayers.Control.DrawFeature(
+                 roads, OpenLayers.Handler.Path,
+                 {displayClass: 'olControlDrawFeaturePath'}
+                 );
+                 drawLine.featureAdded = function (feature) {
+                 feature.layer.eraseFeatures([feature]);
+                 // cast to multilinestring
+                 feature.geometry = new OpenLayers.Geometry.MultiLineString(
+                 feature.geometry
+                 );
+                 feature.style.strokeColor = "#ff0000";
+                 feature.state = OpenLayers.State.INSERT;
+                 feature.layer.drawFeature(feature);
+                 }
+                 
+                 var drawPoint = new OpenLayers.Control.DrawFeature(
+                 cities, OpenLayers.Handler.Point,
+                 {displayClass: 'olControlDrawFeaturePoint'}
+                 );
+                 drawPoint.featureAdded = function (feature) {
+                 feature.layer.eraseFeatures([feature]);
+                 // cast to multipoint
+                 feature.geometry = new OpenLayers.Geometry.MultiPoint(
+                 feature.geometry
+                 );
+                 feature.style.strokeColor = "#0000ff";
+                 feature.state = OpenLayers.State.INSERT;
+                 feature.layer.drawFeature(feature);
+                 }
+                 
+                 panel.addControls(
+                 [new OpenLayers.Control.Navigation(), drawLine, drawPoint]
+                 );
+                 
+                 map.addControl(panel);
+                 map.addControl(new OpenLayers.Control.LayerSwitcher());
+                 
+                 map.zoomToExtent(
+                 new OpenLayers.Bounds( 567000, 6135000, 585000, 6145000)
+                 );*/
+            }
+        </script>
+
+
+    </head>
+    <body onload="init()">
+        <h3>OpenLayers WFS-T demo: Tasmania cities and roads</h3>
+        <div> <ul><li> <a href="#" onclick="map.layers[1].commit();return false">Guardar Calles</a></li></ul></div>
+        <div id="map"></div>
+    </body>
+</html>

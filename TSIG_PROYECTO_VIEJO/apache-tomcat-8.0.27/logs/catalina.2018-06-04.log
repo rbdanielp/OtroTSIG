@@ -1,0 +1,1048 @@
+04-Jun-2018 00:19:02.948 WARNING [http-nio-8085-exec-35] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+04-Jun-2018 00:19:08.950 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.reload Falló la recarga del contexto []
+04-Jun-2018 00:19:11.784 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+04-Jun-2018 00:33:04.750 WARNING [http-nio-8085-exec-43] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+04-Jun-2018 00:33:05.300 INFO [http-nio-8085-exec-43] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+04-Jun-2018 00:33:41.496 INFO [http-nio-8085-exec-45] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+04-Jun-2018 00:33:41.550 WARNING [http-nio-8085-exec-45] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+04-Jun-2018 00:33:48.505 INFO [http-nio-8085-exec-45] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 7.010 ms
+04-Jun-2018 00:33:48.549 INFO [http-nio-8085-exec-48] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+04-Jun-2018 19:34:29.974 WARNING [http-nio-8085-exec-53] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+04-Jun-2018 19:34:30.508 INFO [http-nio-8085-exec-53] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto 
+04-Jun-2018 19:35:09.082 INFO [http-nio-8085-exec-55] org.apache.catalina.startup.HostConfig.deployDescriptor Desplieque del descriptor de configuración /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml
+04-Jun-2018 19:35:09.083 WARNING [http-nio-8085-exec-55] org.apache.catalina.core.StandardContext.setPath Una ruta de contexto debe de ser o una cadena vacía o comenzar con "/". La ruta [/] no cumple con estos criterios y ha sido cambiada por []
+04-Jun-2018 19:35:09.972 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:35:10.029 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:35:10.031 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:35:10.032 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:35:10.033 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es_UY.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es_UY.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:35:10.033 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es_UY.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es_UY.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:35:12.042 INFO [http-nio-8085-exec-55] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of configuration descriptor /home/diego/Escritorio/PruebaMapa/tsigg12/apache-tomcat-8.0.27/conf/Catalina/localhost/ROOT.xml has finished in 2.960 ms
+04-Jun-2018 19:35:12.186 INFO [http-nio-8085-exec-58] org.apache.catalina.util.LifecycleBase.start The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+04-Jun-2018 19:57:47.163 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:47.164 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:47.165 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:47.167 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:47.167 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es_UY.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es_UY.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:47.168 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es_UY.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es_UY.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:48.194 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:48.196 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:48.204 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:48.204 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1428)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:48.205 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es_UY.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org.eclipse.persistence.internal.localization.i18n.LoggingLocalizationResource_es_UY.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForClassLoading(WebappClassLoaderBase.java:1341)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1206)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1167)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2649)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 19:57:48.206 INFO [Finalizer] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es_UY.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+ java.lang.IllegalStateException: Acceso ilegal: esta instancia de aplicación web ya ha sido parada.  Could not load org/eclipse/persistence/internal/localization/i18n/LoggingLocalizationResource_es_UY.properties.  La eventual traza de pila que sigue ha sido motivada por un error lanzado con motivos de depuración así como para intentar terminar el hilo que motivó el acceso ilegal y no tiene impacto funcional.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1355)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1088)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2686)
+	at java.util.ResourceBundle$Control$1.run(ResourceBundle.java:2671)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2670)
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1510)
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1474)
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1370)
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:854)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:60)
+	at org.eclipse.persistence.internal.localization.EclipseLinkLocalization.buildMessage(EclipseLinkLocalization.java:34)
+	at org.eclipse.persistence.internal.localization.LoggingLocalization.buildMessage(LoggingLocalization.java:25)
+	at org.eclipse.persistence.logging.AbstractSessionLog.formatMessage(AbstractSessionLog.java:987)
+	at org.eclipse.persistence.logging.DefaultSessionLog.log(DefaultSessionLog.java:142)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:3491)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4681)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4653)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4629)
+	at org.eclipse.persistence.internal.sessions.AbstractSession.log(AbstractSession.java:4551)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.logout(DatabaseSessionImpl.java:937)
+	at org.eclipse.persistence.sessions.server.ServerSession.logout(ServerSession.java:776)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.removeSessionFromGlobalSessionManager(EntityManagerSetupImpl.java:511)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.undeploy(EntityManagerSetupImpl.java:2850)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.close(EntityManagerFactoryDelegate.java:267)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.finalize(EntityManagerFactoryDelegate.java:344)
+	at java.lang.System$2.invokeFinalize(System.java:1270)
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:98)
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:213)
+
+04-Jun-2018 23:43:59.884 INFO [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+04-Jun-2018 23:44:00.127 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8085"]
+04-Jun-2018 23:44:00.275 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Jun-2018 23:44:00.385 INFO [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+04-Jun-2018 23:44:01.265 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc La aplicación web [ROOT] registró el conductor JDBC [org.postgresql.Driver] pero falló al anular el registro mientras la aplicación web estaba parada. Para prevenir un fallo de memoria, se ha anulado el registro del conductor JDBC por la fuerza.
+04-Jun-2018 23:44:09.852 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Beginning GeoServer cleanup sequence
+04-Jun-2018 23:44:09.873 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.sqlite.JDBC@2aae7eaa
+04-Jun-2018 23:44:09.874 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.hsqldb.jdbc.JDBCDriver@4dcd04c7
+04-Jun-2018 23:44:09.874 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.h2.Driver@3ce9d713
+04-Jun-2018 23:44:09.874 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistered JDBC driver org.postgresql.Driver@17986a26
+04-Jun-2018 23:44:10.187 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory GeoserverWKTOperationFactory["European Petroleum Survey Group"]
+  COORDINATE_OPERATION_AUTHORITY_FACTORY = PropertyCoordinateOperationAuthorityFactory["European Petroleum Survey Group"]
+    CRS_FACTORY                          = ReferencingObjectFactory                                                      
+    CS_FACTORY                           = (same as CRS_FACTORY)                                                         
+    DATUM_FACTORY                        = DatumAliases                                                                  
+    MATH_TRANSFORM_FACTORY               = DefaultMathTransformFactory                                                   
+
+04-Jun-2018 23:44:10.189 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory LongitudeFirstFactory["European Petroleum Survey Group"]
+  FORCE_LONGITUDE_FIRST_AXIS_ORDER           = true                                                          
+  FORCE_STANDARD_AXIS_DIRECTIONS             = false                                                         
+  FORCE_STANDARD_AXIS_UNITS                  = false                                                         
+  CS_AUTHORITY_FACTORY                       = OrderedAxisAuthorityFactory["European Petroleum Survey Group"]
+    DATUM_AUTHORITY_FACTORY                  = ThreadedHsqlEpsgFactory["European Petroleum Survey Group"]    
+      EPSG_DATA_SOURCE                       = java:comp/env/jdbc/EPSG                                       
+      DATUM_AUTHORITY_FACTORY                = FactoryUsingHSQL["European Petroleum Survey Group"]           
+        FORCE_LONGITUDE_FIRST_AXIS_ORDER     = false                                                         
+        FORCE_STANDARD_AXIS_DIRECTIONS       = false                                                         
+        FORCE_STANDARD_AXIS_UNITS            = false                                                         
+        VERSION                              = 8.6                                                           
+        CRS_FACTORY                          = ReferencingObjectFactory                                      
+        CS_FACTORY                           = (same as CRS_FACTORY)                                         
+        DATUM_FACTORY                        = DatumAliases                                                  
+        MATH_TRANSFORM_FACTORY               = DefaultMathTransformFactory                                   
+      CS_AUTHORITY_FACTORY                   = (same as DATUM_AUTHORITY_FACTORY)                             
+      CRS_AUTHORITY_FACTORY                  = (same as DATUM_AUTHORITY_FACTORY)                             
+      COORDINATE_OPERATION_AUTHORITY_FACTORY = (same as DATUM_AUTHORITY_FACTORY)                             
+    CS_AUTHORITY_FACTORY                     = (same as DATUM_AUTHORITY_FACTORY)                             
+    CRS_AUTHORITY_FACTORY                    = (same as DATUM_AUTHORITY_FACTORY)                             
+    COORDINATE_OPERATION_AUTHORITY_FACTORY   = (same as DATUM_AUTHORITY_FACTORY)                             
+    FORCE_STANDARD_AXIS_UNITS                = false                                                         
+    FORCE_STANDARD_AXIS_DIRECTIONS           = false                                                         
+    FORCE_LONGITUDE_FIRST_AXIS_ORDER         = true                                                          
+  CRS_AUTHORITY_FACTORY                      = (same as CS_AUTHORITY_FACTORY)                                
+
+04-Jun-2018 23:44:14.827 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory HTTP_AuthorityFactory["URL in OGC namespace"]
+  DATUM_AUTHORITY_FACTORY                = AllAuthoritiesFactory["Todo"]    
+  CS_AUTHORITY_FACTORY                   = (same as DATUM_AUTHORITY_FACTORY)
+  CRS_AUTHORITY_FACTORY                  = (same as DATUM_AUTHORITY_FACTORY)
+  COORDINATE_OPERATION_AUTHORITY_FACTORY = (same as DATUM_AUTHORITY_FACTORY)
+
+04-Jun-2018 23:44:14.829 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory GeoserverOverridingWKTFactory["European Petroleum Survey Group"]
+  CRS_AUTHORITY_EXTRA_DIRECTORY    = null                                                       
+  DATUM_AUTHORITY_FACTORY          = PropertyAuthorityFactory["European Petroleum Survey Group"]
+    FORCE_STANDARD_AXIS_DIRECTIONS = false                                                      
+    FORCE_STANDARD_AXIS_UNITS      = false                                                      
+    CRS_FACTORY                    = ReferencingObjectFactory                                   
+    CS_FACTORY                     = (same as CRS_FACTORY)                                      
+    DATUM_FACTORY                  = DatumAliases                                               
+    MATH_TRANSFORM_FACTORY         = DefaultMathTransformFactory                                
+  CS_AUTHORITY_FACTORY             = (same as DATUM_AUTHORITY_FACTORY)                          
+  CRS_AUTHORITY_FACTORY            = (same as DATUM_AUTHORITY_FACTORY)                          
+
+04-Jun-2018 23:44:14.831 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory LongitudeFirstFactory["European Petroleum Survey Group"]
+  FORCE_LONGITUDE_FIRST_AXIS_ORDER           = true                                                          
+  FORCE_STANDARD_AXIS_DIRECTIONS             = false                                                         
+  FORCE_STANDARD_AXIS_UNITS                  = false                                                         
+  CS_AUTHORITY_FACTORY                       = OrderedAxisAuthorityFactory["European Petroleum Survey Group"]
+    DATUM_AUTHORITY_FACTORY                  = ThreadedHsqlEpsgFactory["European Petroleum Survey Group"]    
+      EPSG_DATA_SOURCE                       = java:comp/env/jdbc/EPSG                                       
+      DATUM_AUTHORITY_FACTORY                = FactoryUsingHSQL["European Petroleum Survey Group"]           
+        FORCE_LONGITUDE_FIRST_AXIS_ORDER     = false                                                         
+        FORCE_STANDARD_AXIS_DIRECTIONS       = false                                                         
+        FORCE_STANDARD_AXIS_UNITS            = false                                                         
+        VERSION                              = 8.6                                                           
+        CRS_FACTORY                          = ReferencingObjectFactory                                      
+        CS_FACTORY                           = (same as CRS_FACTORY)                                         
+        DATUM_FACTORY                        = DatumAliases                                                  
+        MATH_TRANSFORM_FACTORY               = DefaultMathTransformFactory                                   
+      CS_AUTHORITY_FACTORY                   = (same as DATUM_AUTHORITY_FACTORY)                             
+      CRS_AUTHORITY_FACTORY                  = (same as DATUM_AUTHORITY_FACTORY)                             
+      COORDINATE_OPERATION_AUTHORITY_FACTORY = (same as DATUM_AUTHORITY_FACTORY)                             
+    CS_AUTHORITY_FACTORY                     = (same as DATUM_AUTHORITY_FACTORY)                             
+    CRS_AUTHORITY_FACTORY                    = (same as DATUM_AUTHORITY_FACTORY)                             
+    COORDINATE_OPERATION_AUTHORITY_FACTORY   = (same as DATUM_AUTHORITY_FACTORY)                             
+    FORCE_STANDARD_AXIS_UNITS                = false                                                         
+    FORCE_STANDARD_AXIS_DIRECTIONS           = false                                                         
+    FORCE_LONGITUDE_FIRST_AXIS_ORDER         = true                                                          
+  CRS_AUTHORITY_FACTORY                      = (same as CS_AUTHORITY_FACTORY)                                
+
+04-Jun-2018 23:44:15.155 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory CartesianAuthorityFactory["European Petroleum Survey Group"]
+  CRS_FACTORY            = ReferencingObjectFactory   
+  CS_FACTORY             = (same as CRS_FACTORY)      
+  DATUM_FACTORY          = DatumAliases               
+  MATH_TRANSFORM_FACTORY = DefaultMathTransformFactory
+
+04-Jun-2018 23:44:15.156 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory GeoserverCustomWKTFactory["European Petroleum Survey Group"]
+  CRS_AUTHORITY_EXTRA_DIRECTORY    = null                                                       
+  DATUM_AUTHORITY_FACTORY          = PropertyAuthorityFactory["European Petroleum Survey Group"]
+    FORCE_STANDARD_AXIS_DIRECTIONS = false                                                      
+    FORCE_STANDARD_AXIS_UNITS      = false                                                      
+    CRS_FACTORY                    = ReferencingObjectFactory                                   
+    CS_FACTORY                     = (same as CRS_FACTORY)                                      
+    DATUM_FACTORY                  = DatumAliases                                               
+    MATH_TRANSFORM_FACTORY         = DefaultMathTransformFactory                                
+  CS_AUTHORITY_FACTORY             = (same as DATUM_AUTHORITY_FACTORY)                          
+  CRS_AUTHORITY_FACTORY            = (same as DATUM_AUTHORITY_FACTORY)                          
+
+04-Jun-2018 23:44:15.158 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory HTTP_AuthorityFactory["URL in OGC namespace"]
+  DATUM_AUTHORITY_FACTORY                = AllAuthoritiesFactory["Todo"]    
+  CS_AUTHORITY_FACTORY                   = (same as DATUM_AUTHORITY_FACTORY)
+  CRS_AUTHORITY_FACTORY                  = (same as DATUM_AUTHORITY_FACTORY)
+  COORDINATE_OPERATION_AUTHORITY_FACTORY = (same as DATUM_AUTHORITY_FACTORY)
+
+04-Jun-2018 23:44:15.190 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory WebCRSFactory["Web Map Service CRS"]
+  CRS_FACTORY            = ReferencingObjectFactory   
+  CS_FACTORY             = (same as CRS_FACTORY)      
+  DATUM_FACTORY          = DatumAliases               
+  MATH_TRANSFORM_FACTORY = DefaultMathTransformFactory
+
+04-Jun-2018 23:44:15.191 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory AutoCRSFactory["Automatic Projections"]
+  CRS_FACTORY            = ReferencingObjectFactory   
+  CS_FACTORY             = (same as CRS_FACTORY)      
+  DATUM_FACTORY          = DatumAliases               
+  MATH_TRANSFORM_FACTORY = DefaultMathTransformFactory
+
+04-Jun-2018 23:44:15.193 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory LongitudeFirstFactory["European Petroleum Survey Group"]
+  FORCE_LONGITUDE_FIRST_AXIS_ORDER           = true                                                          
+  FORCE_STANDARD_AXIS_DIRECTIONS             = false                                                         
+  FORCE_STANDARD_AXIS_UNITS                  = false                                                         
+  CS_AUTHORITY_FACTORY                       = OrderedAxisAuthorityFactory["European Petroleum Survey Group"]
+    DATUM_AUTHORITY_FACTORY                  = ThreadedHsqlEpsgFactory["European Petroleum Survey Group"]    
+      EPSG_DATA_SOURCE                       = java:comp/env/jdbc/EPSG                                       
+      DATUM_AUTHORITY_FACTORY                = FactoryUsingHSQL["European Petroleum Survey Group"]           
+        FORCE_LONGITUDE_FIRST_AXIS_ORDER     = false                                                         
+        FORCE_STANDARD_AXIS_DIRECTIONS       = false                                                         
+        FORCE_STANDARD_AXIS_UNITS            = false                                                         
+        VERSION                              = 8.6                                                           
+        CRS_FACTORY                          = ReferencingObjectFactory                                      
+        CS_FACTORY                           = (same as CRS_FACTORY)                                         
+        DATUM_FACTORY                        = DatumAliases                                                  
+        MATH_TRANSFORM_FACTORY               = DefaultMathTransformFactory                                   
+      CS_AUTHORITY_FACTORY                   = (same as DATUM_AUTHORITY_FACTORY)                             
+      CRS_AUTHORITY_FACTORY                  = (same as DATUM_AUTHORITY_FACTORY)                             
+      COORDINATE_OPERATION_AUTHORITY_FACTORY = (same as DATUM_AUTHORITY_FACTORY)                             
+    CS_AUTHORITY_FACTORY                     = (same as DATUM_AUTHORITY_FACTORY)                             
+    CRS_AUTHORITY_FACTORY                    = (same as DATUM_AUTHORITY_FACTORY)                             
+    COORDINATE_OPERATION_AUTHORITY_FACTORY   = (same as DATUM_AUTHORITY_FACTORY)                             
+    FORCE_STANDARD_AXIS_UNITS                = false                                                         
+    FORCE_STANDARD_AXIS_DIRECTIONS           = false                                                         
+    FORCE_LONGITUDE_FIRST_AXIS_ORDER         = true                                                          
+  CRS_AUTHORITY_FACTORY                      = (same as CS_AUTHORITY_FACTORY)                                
+
+04-Jun-2018 23:44:15.591 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.disposeAuthorityFactories Disposing referencing factory HTTP_AuthorityFactory["URL in OGC namespace"]
+  DATUM_AUTHORITY_FACTORY                = AllAuthoritiesFactory["Todo"]    
+  CS_AUTHORITY_FACTORY                   = (same as DATUM_AUTHORITY_FACTORY)
+  CRS_AUTHORITY_FACTORY                  = (same as DATUM_AUTHORITY_FACTORY)
+  COORDINATE_OPERATION_AUTHORITY_FACTORY = (same as DATUM_AUTHORITY_FACTORY)
+
+04-Jun-2018 23:44:16.355 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Shut down GT referencing threads 
+04-Jun-2018 23:44:16.824 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Shut down GT  SPI 
+04-Jun-2018 23:44:16.824 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Shut down coverage thread pool 
+04-Jun-2018 23:44:16.881 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.stream.output.spi.FileImageOutputStreamExtImplSpi@38ee28e
+04-Jun-2018 23:44:16.881 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.raw.RawImageWriterSpi@73fad6fb
+04-Jun-2018 23:44:16.881 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.tiff.TIFFImageReaderSpi@568617c4
+04-Jun-2018 23:44:16.881 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.plugins.arcgrid.spi.AsciiGridsImageWriterSpi@624c2a08
+04-Jun-2018 23:44:16.881 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.stream.input.spi.FileImageInputStreamExtImplSpi@6891a1f9
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.plugins.arcgrid.spi.AsciiGridsImageReaderSpi@506a63a1
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.stream.ChannelImageOutputStreamSpi@555601d8
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.wbmp.WBMPImageReaderSpi@70e732c9
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.bmp.BMPImageWriterSpi@6a66b9a9
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.gif.GIFImageWriterSpi@65074a48
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.bmp.BMPImageReaderSpi@54ec2e83
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.stream.input.spi.StringImageInputStreamSpi@71ad9f3d
+04-Jun-2018 23:44:16.882 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.stream.output.spi.StringImageOutputStreamSpi@4ab14f43
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageioimpl.plugins.tiff.TIFFImageWriterSpi@e5ea2cc
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriterSpi@2c0e92dc
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.stream.output.spi.URLImageOutputStreamSpi@26b1ca22
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.pnm.PNMImageWriterSpi@6aad5bfe
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.stream.ChannelImageInputStreamSpi@60bc55af
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.wbmp.WBMPImageWriterSpi@4c3aae8e
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageio.stream.input.spi.URLImageInputStreamSpi@28f6ee42
+04-Jun-2018 23:44:16.883 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider org.geotools.geopkg.ByteArrayImageInputStreamSpi@68e55152
+04-Jun-2018 23:44:16.884 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.pnm.PNMImageReaderSpi@b720e6a
+04-Jun-2018 23:44:16.884 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider it.geosolutions.imageioimpl.plugins.tiff.TIFFImageReaderSpi@71422f79
+04-Jun-2018 23:44:16.884 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering Image I/O provider com.sun.media.imageioimpl.plugins.raw.RawImageReaderSpi@1fbe0f80
+04-Jun-2018 23:44:17.691 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMultiplyRIF
+04-Jun-2018 23:44:17.709 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MultiplyCRIF
+04-Jun-2018 23:44:17.755 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibLogRIF
+04-Jun-2018 23:44:17.759 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.LogCRIF
+04-Jun-2018 23:44:17.775 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.PNMRIF
+04-Jun-2018 23:44:17.898 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.IIPCRIF
+04-Jun-2018 23:44:17.968 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibGradientRIF
+04-Jun-2018 23:44:17.968 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.GradientRIF
+04-Jun-2018 23:44:18.039 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.PatternRIF
+04-Jun-2018 23:44:18.040 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.PNGRIF
+04-Jun-2018 23:44:18.198 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class javax.media.jai.NullCRIF
+04-Jun-2018 23:44:18.213 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.FileStoreRIF
+04-Jun-2018 23:44:18.237 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class it.geosolutions.jaiext.zonal.ZonalStatsRIF
+04-Jun-2018 23:44:18.250 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.imageioimpl.ImageWriteCRIF
+04-Jun-2018 23:44:18.267 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibBandCombineRIF
+04-Jun-2018 23:44:18.276 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.BandCombineCRIF
+04-Jun-2018 23:44:18.284 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibTranslateRIF
+04-Jun-2018 23:44:18.284 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.TranslateCRIF
+04-Jun-2018 23:44:18.290 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibConvolveRIF
+04-Jun-2018 23:44:18.291 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ConvolveRIF
+04-Jun-2018 23:44:18.308 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibDCTRIF
+04-Jun-2018 23:44:18.308 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.DCTCRIF
+04-Jun-2018 23:44:18.308 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.GIFRIF
+04-Jun-2018 23:44:18.331 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.IIPResolutionRIF
+04-Jun-2018 23:44:18.332 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.FormatCRIF
+04-Jun-2018 23:44:18.333 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibAddRIF
+04-Jun-2018 23:44:18.333 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AddCRIF
+04-Jun-2018 23:44:18.352 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMaxRIF
+04-Jun-2018 23:44:18.352 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MaxCRIF
+04-Jun-2018 23:44:18.382 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.BorderRIF
+04-Jun-2018 23:44:18.394 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibRescaleRIF
+04-Jun-2018 23:44:18.395 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.RescaleCRIF
+04-Jun-2018 23:44:18.395 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibBinarizeRIF
+04-Jun-2018 23:44:18.395 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.BinarizeCRIF
+04-Jun-2018 23:44:18.396 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.DivideComplexCRIF
+04-Jun-2018 23:44:18.396 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibDilateRIF
+04-Jun-2018 23:44:18.396 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.DilateRIF
+04-Jun-2018 23:44:18.407 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibHistogramRIF
+04-Jun-2018 23:44:18.408 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.HistogramRIF
+04-Jun-2018 23:44:18.408 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AddCollectionCRIF
+04-Jun-2018 23:44:18.418 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.URLRIF
+04-Jun-2018 23:44:18.441 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class org.jaitools.media.jai.vectorize.VectorizeRIF
+04-Jun-2018 23:44:18.441 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.PolarToComplexCRIF
+04-Jun-2018 23:44:18.442 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class it.geosolutions.jaiext.colorindexer.ColorIndexerCRIF
+04-Jun-2018 23:44:18.455 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibSubtractConstRIF
+04-Jun-2018 23:44:18.455 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.SubtractConstCRIF
+04-Jun-2018 23:44:18.466 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMaxFilterRIF
+04-Jun-2018 23:44:18.466 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MaxFilterRIF
+04-Jun-2018 23:44:18.467 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.JPEGRIF
+04-Jun-2018 23:44:18.478 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ErrorDiffusionRIF
+04-Jun-2018 23:44:18.486 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class it.geosolutions.jaiext.piecewise.GenericPiecewiseCRIF
+04-Jun-2018 23:44:18.499 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.imageioimpl.ImageReadCRIF
+04-Jun-2018 23:44:18.508 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMeanRIF
+04-Jun-2018 23:44:18.508 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MeanRIF
+04-Jun-2018 23:44:18.509 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.EncodeRIF
+04-Jun-2018 23:44:18.509 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.PhaseCRIF
+04-Jun-2018 23:44:18.517 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ConjugateCRIF
+04-Jun-2018 23:44:18.517 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.OrderedDitherRIF
+04-Jun-2018 23:44:18.517 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibOrRIF
+04-Jun-2018 23:44:18.517 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.OrCRIF
+04-Jun-2018 23:44:18.518 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.BandMergeCRIF
+04-Jun-2018 23:44:18.518 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.CropCRIF
+04-Jun-2018 23:44:18.534 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibExtremaRIF
+04-Jun-2018 23:44:18.534 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ExtremaRIF
+04-Jun-2018 23:44:18.534 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibSubtractRIF
+04-Jun-2018 23:44:18.534 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.SubtractCRIF
+04-Jun-2018 23:44:18.535 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ConstantCRIF
+04-Jun-2018 23:44:18.535 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibIDFTRIF
+04-Jun-2018 23:44:18.535 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.IDFTCRIF
+04-Jun-2018 23:44:18.592 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibInvertRIF
+04-Jun-2018 23:44:18.592 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.InvertCRIF
+04-Jun-2018 23:44:18.593 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.PiecewiseCRIF
+04-Jun-2018 23:44:18.593 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibDivideByConstRIF
+04-Jun-2018 23:44:18.593 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.DivideByConstCRIF
+04-Jun-2018 23:44:18.593 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibOrConstRIF
+04-Jun-2018 23:44:18.593 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.OrConstCRIF
+04-Jun-2018 23:44:18.594 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MosaicRIF
+04-Jun-2018 23:44:18.594 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMosaicRIF
+04-Jun-2018 23:44:18.606 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibRotateRIF
+04-Jun-2018 23:44:18.606 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.RotateCRIF
+04-Jun-2018 23:44:18.607 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibXorConstRIF
+04-Jun-2018 23:44:18.607 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.XorConstCRIF
+04-Jun-2018 23:44:18.608 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibShearRIF
+04-Jun-2018 23:44:18.608 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ShearRIF
+04-Jun-2018 23:44:18.608 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MagnitudeSquaredCRIF
+04-Jun-2018 23:44:18.609 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibAddConstRIF
+04-Jun-2018 23:44:18.609 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AddConstCRIF
+04-Jun-2018 23:44:18.610 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class it.geosolutions.jaiext.rlookup.RangeLookupRIF
+04-Jun-2018 23:44:18.610 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibAndRIF
+04-Jun-2018 23:44:18.611 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AndCRIF
+04-Jun-2018 23:44:18.611 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.StreamRIF
+04-Jun-2018 23:44:18.635 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ColorConvertCRIF
+04-Jun-2018 23:44:18.686 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibXorRIF
+04-Jun-2018 23:44:18.686 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.XorCRIF
+04-Jun-2018 23:44:18.686 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class it.geosolutions.jaiext.classifier.RasterClassifierCRIF
+04-Jun-2018 23:44:18.686 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibAbsoluteRIF
+04-Jun-2018 23:44:18.686 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AbsoluteCRIF
+04-Jun-2018 23:44:18.697 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibSubtractFromConstRIF
+04-Jun-2018 23:44:18.697 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.SubtractFromConstCRIF
+04-Jun-2018 23:44:18.697 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibCompositeRIF
+04-Jun-2018 23:44:18.697 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.CompositeCRIF
+04-Jun-2018 23:44:18.697 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.BMPRIF
+04-Jun-2018 23:44:18.698 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.TIFFRIF
+04-Jun-2018 23:44:18.698 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibBoxFilterRIF
+04-Jun-2018 23:44:18.698 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.BoxFilterRIF
+04-Jun-2018 23:44:18.707 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibBandSelectRIF
+04-Jun-2018 23:44:18.707 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.BandSelectCRIF
+04-Jun-2018 23:44:18.713 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibDFTRIF
+04-Jun-2018 23:44:18.713 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.DFTCRIF
+04-Jun-2018 23:44:18.713 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class it.geosolutions.jaiext.buffer.BufferRIF
+04-Jun-2018 23:44:18.713 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibErodeRIF
+04-Jun-2018 23:44:18.713 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ErodeRIF
+04-Jun-2018 23:44:18.713 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMultiplyConstRIF
+04-Jun-2018 23:44:18.713 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MultiplyConstCRIF
+04-Jun-2018 23:44:18.714 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibUnsharpMaskRIF
+04-Jun-2018 23:44:18.714 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.UnsharpMaskRIF
+04-Jun-2018 23:44:18.715 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class it.geosolutions.jaiext.vectorbin.VectorBinarizeRIF
+04-Jun-2018 23:44:18.715 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMinFilterRIF
+04-Jun-2018 23:44:18.715 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MinFilterRIF
+04-Jun-2018 23:44:18.715 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibExpRIF
+04-Jun-2018 23:44:18.715 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ExpCRIF
+04-Jun-2018 23:44:18.715 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ColorQuantizerRIF
+04-Jun-2018 23:44:18.716 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.OverlayCRIF
+04-Jun-2018 23:44:18.716 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibAndConstRIF
+04-Jun-2018 23:44:18.716 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AndConstCRIF
+04-Jun-2018 23:44:18.716 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.FileLoadRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibSubsampleAverageRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.SubsampleAverageCRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibThresholdRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ThresholdCRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MatchCDFCRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MultiplyComplexCRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibScaleRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ScaleCRIF
+04-Jun-2018 23:44:18.717 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibDivideRIF
+04-Jun-2018 23:44:18.718 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.DivideCRIF
+04-Jun-2018 23:44:18.718 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibClampRIF
+04-Jun-2018 23:44:18.718 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ClampCRIF
+04-Jun-2018 23:44:18.719 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class org.jaitools.media.jai.contour.ContourRIF
+04-Jun-2018 23:44:18.719 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibAffineRIF
+04-Jun-2018 23:44:18.719 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AffineCRIF
+04-Jun-2018 23:44:18.719 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AWTImageRIF
+04-Jun-2018 23:44:18.719 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MagnitudeCRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibLookupRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.LookupCRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibSubsampleBinaryToGrayRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.SubsampleBinaryToGrayCRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibNotRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.NotCRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibIDCTRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.IDCTCRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibDivideIntoConstRIF
+04-Jun-2018 23:44:18.720 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.DivideIntoConstCRIF
+04-Jun-2018 23:44:18.721 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.ImageFunctionRIF
+04-Jun-2018 23:44:18.722 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMedianFilterRIF
+04-Jun-2018 23:44:18.722 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MedianFilterRIF
+04-Jun-2018 23:44:18.722 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibFilteredSubsampleRIF
+04-Jun-2018 23:44:18.723 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.FilteredSubsampleRIF
+04-Jun-2018 23:44:18.725 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibMinRIF
+04-Jun-2018 23:44:18.725 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.MinCRIF
+04-Jun-2018 23:44:18.725 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.WarpRIF
+04-Jun-2018 23:44:18.725 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibWarpRIF
+04-Jun-2018 23:44:18.725 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.PeriodicShiftCRIF
+04-Jun-2018 23:44:18.726 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.FPXRIF
+04-Jun-2018 23:44:18.726 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.mlib.MlibTransposeRIF
+04-Jun-2018 23:44:18.726 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.TransposeCRIF
+04-Jun-2018 23:44:18.798 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.imageioimpl.ImageReadCIF
+04-Jun-2018 23:44:18.798 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.opimage.AddConstToCollectionCIF
+04-Jun-2018 23:44:18.798 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.imageioimpl.ImageWriteCIF
+04-Jun-2018 23:44:18.811 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.tilecodec.RawTileDecoderFactory
+04-Jun-2018 23:44:18.811 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.tilecodec.JPEGTileDecoderFactory
+04-Jun-2018 23:44:18.811 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.tilecodec.GZIPTileDecoderFactory
+04-Jun-2018 23:44:18.812 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.tilecodec.RawTileEncoderFactory
+04-Jun-2018 23:44:18.812 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.tilecodec.JPEGTileEncoderFactory
+04-Jun-2018 23:44:18.812 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Unregistering JAI factory class com.sun.media.jai.tilecodec.GZIPTileEncoderFactory
+04-Jun-2018 23:44:18.824 INFO [localhost-startStop-2] org.geoserver.GeoserverInitStartupListener.contextDestroyed Cleaned up javabean caches
+04-Jun-2018 23:47:34.257 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [geoserver] appears to have started a thread named [EMF Reference Cleaner] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+ org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+04-Jun-2018 23:47:34.259 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [geoserver] appears to have started a thread named [FileSystemWatcher-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+04-Jun-2018 23:47:34.260 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [geoserver] appears to have started a thread named [GuavaAuthCache-0-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+04-Jun-2018 23:47:34.261 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [geoserver] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+04-Jun-2018 23:47:34.263 WARNING [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [geoserver] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+04-Jun-2018 23:47:34.263 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.InheritableThreadLocal] (valor [java.lang.InheritableThreadLocal@b70351c]) y un valor del tipo [org.geoserver.ows.Request] (valor [WMS 1.1.0 GetMap]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.264 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.InheritableThreadLocal] (valor [java.lang.InheritableThreadLocal@b70351c]) y un valor del tipo [org.geoserver.ows.Request] (valor [WMS 1.1.0 GetMap]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.264 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@320a3fd2]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.265 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@43ac76ea]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.265 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@4fd2bc41]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.265 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@7586c9b5]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.266 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@553deac9]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.266 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@566e6288]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.267 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@c04fcb0]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.267 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@4f0c47e4]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.267 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@75dd876e]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.268 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@5002c17f]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.268 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@7b4856b3]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.268 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@56561d59]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.269 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@4fa9160a]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.269 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@9e63fb9]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.269 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@30a21df8]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.270 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@56787260]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.270 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@51e627e3]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.270 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@6945d191]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.271 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@49284c9c]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.271 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@5c56dcab]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.271 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@3c6f21fd]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.272 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@7be1b6b8]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.272 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@70a659f4]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.272 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@1a7f60cf]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.273 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@5f5acab4]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.278 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@2978e391]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.278 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@6b5376b3]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.278 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@53179231]) y un valor del tipo [org.geoserver.platform.AdvancedDispatchFilter.AdvancedDispatchHttpRequest] (valor [org.geoserver.platform.AdvancedDispatchFilter$AdvancedDispatchHttpRequest@acb1a0e]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.279 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [java.lang.ThreadLocal] (valor [java.lang.ThreadLocal@497e620c]) y un valor del tipo [org.geotools.data.postgis.WKBAttributeIO] (valor [org.geotools.data.postgis.WKBAttributeIO@34d6e89]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.279 SEVERE [localhost-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.checkThreadLocalMapForLeaks La aplicación web [geoserver] creó un ThreadLocal con clave del tipo [org.geotools.renderer.lite.RendererUtilities$1] (valor [org.geotools.renderer.lite.RendererUtilities$1@2c45f2b4]) y un valor del tipo [org.geotools.referencing.operation.builder.GridToEnvelopeMapper] (valor [org.geotools.referencing.operation.builder.GridToEnvelopeMapper@6dc7611a]) pero no pudo quitarlo cuando la aplicación web se paró. Los hilos se van a renovar con el tiempo para intentar evitar in posible fallo de memoria.
+04-Jun-2018 23:47:34.511 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8085"]
+04-Jun-2018 23:47:34.692 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Jun-2018 23:47:34.757 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8085"]
+04-Jun-2018 23:47:34.775 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

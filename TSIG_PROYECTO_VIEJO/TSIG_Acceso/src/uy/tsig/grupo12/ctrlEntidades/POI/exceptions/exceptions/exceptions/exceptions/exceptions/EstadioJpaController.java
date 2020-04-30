@@ -1,0 +1,240 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package uy.tsig.grupo12.ctrlEntidades.POI.exceptions.exceptions.exceptions.exceptions.exceptions;
+
+import java.io.Serializable;
+import javax.persistence.Query;
+import javax.persistence.EntityNotFoundException;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import uy.tsig.grupo12.entidades.POI.Promocion;
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import uy.tsig.grupo12.ctrlEntidades.POI.exceptions.exceptions.exceptions.exceptions.exceptions.exceptions.NonexistentEntityException;
+import uy.tsig.grupo12.entidades.POI.Comentario;
+import uy.tsig.grupo12.entidades.POI.Estadio;
+
+/**
+ *
+ * @author diego
+ */
+public class EstadioJpaController implements Serializable {
+
+    public EstadioJpaController(EntityManagerFactory emf) {
+        this.emf = emf;
+    }
+    private EntityManagerFactory emf = null;
+
+    public EntityManager getEntityManager() {
+        return emf.createEntityManager();
+    }
+
+    public void create(Estadio estadio) {
+        if (estadio.getPromociones() == null) {
+            estadio.setPromociones(new ArrayList<Promocion>());
+        }
+        if (estadio.getComentarios() == null) {
+            estadio.setComentarios(new ArrayList<Comentario>());
+        }
+        EntityManager em = null;
+        try {
+            em = getEntityManager();
+            em.getTransaction().begin();
+            List<Promocion> attachedPromociones = new ArrayList<Promocion>();
+            for (Promocion promocionesPromocionToAttach : estadio.getPromociones()) {
+                promocionesPromocionToAttach = em.getReference(promocionesPromocionToAttach.getClass(), promocionesPromocionToAttach.getId());
+                attachedPromociones.add(promocionesPromocionToAttach);
+            }
+            estadio.setPromociones(attachedPromociones);
+            List<Comentario> attachedComentarios = new ArrayList<Comentario>();
+            for (Comentario comentariosComentarioToAttach : estadio.getComentarios()) {
+                comentariosComentarioToAttach = em.getReference(comentariosComentarioToAttach.getClass(), comentariosComentarioToAttach.getId());
+                attachedComentarios.add(comentariosComentarioToAttach);
+            }
+            estadio.setComentarios(attachedComentarios);
+            em.persist(estadio);
+            for (Promocion promocionesPromocion : estadio.getPromociones()) {
+                uy.tsig.grupo12.entidades.POI.POI oldPoiOfPromocionesPromocion = promocionesPromocion.getPoi();
+                promocionesPromocion.setPoi(estadio);
+                promocionesPromocion = em.merge(promocionesPromocion);
+                if (oldPoiOfPromocionesPromocion != null) {
+                    oldPoiOfPromocionesPromocion.getPromociones().remove(promocionesPromocion);
+                    oldPoiOfPromocionesPromocion = em.merge(oldPoiOfPromocionesPromocion);
+                }
+            }
+            for (Comentario comentariosComentario : estadio.getComentarios()) {
+                uy.tsig.grupo12.entidades.POI.POI oldPoiOfComentariosComentario = comentariosComentario.getPoi();
+                comentariosComentario.setPoi(estadio);
+                comentariosComentario = em.merge(comentariosComentario);
+                if (oldPoiOfComentariosComentario != null) {
+                    oldPoiOfComentariosComentario.getComentarios().remove(comentariosComentario);
+                    oldPoiOfComentariosComentario = em.merge(oldPoiOfComentariosComentario);
+                }
+            }
+            em.getTransaction().commit();
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+    }
+
+    public void edit(Estadio estadio) throws NonexistentEntityException, Exception {
+        EntityManager em = null;
+        try {
+            em = getEntityManager();
+            em.getTransaction().begin();
+            Estadio persistentEstadio = em.find(Estadio.class, estadio.getGid());
+            List<Promocion> promocionesOld = persistentEstadio.getPromociones();
+            List<Promocion> promocionesNew = estadio.getPromociones();
+            List<Comentario> comentariosOld = persistentEstadio.getComentarios();
+            List<Comentario> comentariosNew = estadio.getComentarios();
+            List<Promocion> attachedPromocionesNew = new ArrayList<Promocion>();
+            for (Promocion promocionesNewPromocionToAttach : promocionesNew) {
+                promocionesNewPromocionToAttach = em.getReference(promocionesNewPromocionToAttach.getClass(), promocionesNewPromocionToAttach.getId());
+                attachedPromocionesNew.add(promocionesNewPromocionToAttach);
+            }
+            promocionesNew = attachedPromocionesNew;
+            estadio.setPromociones(promocionesNew);
+            List<Comentario> attachedComentariosNew = new ArrayList<Comentario>();
+            for (Comentario comentariosNewComentarioToAttach : comentariosNew) {
+                comentariosNewComentarioToAttach = em.getReference(comentariosNewComentarioToAttach.getClass(), comentariosNewComentarioToAttach.getId());
+                attachedComentariosNew.add(comentariosNewComentarioToAttach);
+            }
+            comentariosNew = attachedComentariosNew;
+            estadio.setComentarios(comentariosNew);
+            estadio = em.merge(estadio);
+            for (Promocion promocionesOldPromocion : promocionesOld) {
+                if (!promocionesNew.contains(promocionesOldPromocion)) {
+                    promocionesOldPromocion.setPoi(null);
+                    promocionesOldPromocion = em.merge(promocionesOldPromocion);
+                }
+            }
+            for (Promocion promocionesNewPromocion : promocionesNew) {
+                if (!promocionesOld.contains(promocionesNewPromocion)) {
+                    Estadio oldPoiOfPromocionesNewPromocion = (Estadio) promocionesNewPromocion.getPoi();
+                    promocionesNewPromocion.setPoi(estadio);
+                    promocionesNewPromocion = em.merge(promocionesNewPromocion);
+                    if (oldPoiOfPromocionesNewPromocion != null && !oldPoiOfPromocionesNewPromocion.equals(estadio)) {
+                        oldPoiOfPromocionesNewPromocion.getPromociones().remove(promocionesNewPromocion);
+                        oldPoiOfPromocionesNewPromocion = em.merge(oldPoiOfPromocionesNewPromocion);
+                    }
+                }
+            }
+            for (Comentario comentariosOldComentario : comentariosOld) {
+                if (!comentariosNew.contains(comentariosOldComentario)) {
+                    comentariosOldComentario.setPoi(null);
+                    comentariosOldComentario = em.merge(comentariosOldComentario);
+                }
+            }
+            for (Comentario comentariosNewComentario : comentariosNew) {
+                if (!comentariosOld.contains(comentariosNewComentario)) {
+                    Estadio oldPoiOfComentariosNewComentario = (Estadio) comentariosNewComentario.getPoi();
+                    comentariosNewComentario.setPoi(estadio);
+                    comentariosNewComentario = em.merge(comentariosNewComentario);
+                    if (oldPoiOfComentariosNewComentario != null && !oldPoiOfComentariosNewComentario.equals(estadio)) {
+                        oldPoiOfComentariosNewComentario.getComentarios().remove(comentariosNewComentario);
+                        oldPoiOfComentariosNewComentario = em.merge(oldPoiOfComentariosNewComentario);
+                    }
+                }
+            }
+            em.getTransaction().commit();
+        } catch (Exception ex) {
+            String msg = ex.getLocalizedMessage();
+            if (msg == null || msg.length() == 0) {
+                int id = estadio.getGid();
+                if (findEstadio(id) == null) {
+                    throw new NonexistentEntityException("The estadio with id " + id + " no longer exists.");
+                }
+            }
+            throw ex;
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+    }
+
+    public void destroy(int id) throws NonexistentEntityException {
+        EntityManager em = null;
+        try {
+            em = getEntityManager();
+            em.getTransaction().begin();
+            Estadio estadio;
+            try {
+                estadio = em.getReference(Estadio.class, id);
+                estadio.getGid();
+            } catch (EntityNotFoundException enfe) {
+                throw new NonexistentEntityException("The estadio with id " + id + " no longer exists.", enfe);
+            }
+            List<Promocion> promociones = estadio.getPromociones();
+            for (Promocion promocionesPromocion : promociones) {
+                promocionesPromocion.setPoi(null);
+                promocionesPromocion = em.merge(promocionesPromocion);
+            }
+            List<Comentario> comentarios = estadio.getComentarios();
+            for (Comentario comentariosComentario : comentarios) {
+                comentariosComentario.setPoi(null);
+                comentariosComentario = em.merge(comentariosComentario);
+            }
+            em.remove(estadio);
+            em.getTransaction().commit();
+        } finally {
+            if (em != null) {
+                em.close();
+            }
+        }
+    }
+
+    public List<Estadio> findEstadioEntities() {
+        return findEstadioEntities(true, -1, -1);
+    }
+
+    public List<Estadio> findEstadioEntities(int maxResults, int firstResult) {
+        return findEstadioEntities(false, maxResults, firstResult);
+    }
+
+    private List<Estadio> findEstadioEntities(boolean all, int maxResults, int firstResult) {
+        EntityManager em = getEntityManager();
+        try {
+            CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
+            cq.select(cq.from(Estadio.class));
+            Query q = em.createQuery(cq);
+            if (!all) {
+                q.setMaxResults(maxResults);
+                q.setFirstResult(firstResult);
+            }
+            return q.getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    public Estadio findEstadio(int id) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.find(Estadio.class, id);
+        } finally {
+            em.close();
+        }
+    }
+
+    public int getEstadioCount() {
+        EntityManager em = getEntityManager();
+        try {
+            CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
+            Root<Estadio> rt = cq.from(Estadio.class);
+            cq.select(em.getCriteriaBuilder().count(rt));
+            Query q = em.createQuery(cq);
+            return ((Long) q.getSingleResult()).intValue();
+        } finally {
+            em.close();
+        }
+    }
+    
+}

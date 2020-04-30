@@ -1,0 +1,41 @@
+<featureType>
+  <id>FeatureTypeInfoImpl--1301976a:163c76bff29:-7fd7</id>
+  <name>promocion</name>
+  <nativeName>promocion</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-1083d5c6:163c3c38bc6:-7ffe</id>
+  </namespace>
+  <title>promocion</title>
+  <keywords>
+    <string>features</string>
+    <string>promocion</string>
+  </keywords>
+  <srs>EPSG:32721</srs>
+  <nativeBoundingBox>
+    <minx>166021.44309607727</minx>
+    <maxx>833978.5569039227</maxx>
+    <miny>1116915.0440476106</miny>
+    <maxy>1.0E7</maxy>
+    <crs class="projected">EPSG:32721</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-73.76341742015656</minx>
+    <maxx>-40.236582579843436</maxx>
+    <miny>-80.01343130977129</miny>
+    <maxy>0.0</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-1083d5c6:163c3c38bc6:-7ffd</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

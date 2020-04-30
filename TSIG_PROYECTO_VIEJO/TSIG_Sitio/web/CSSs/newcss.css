@@ -1,0 +1,273 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/06/2018, 07:41:40 PM
+    Author     : tecnoinf
+*/
+
+.ol-zoom {
+    top: 52px;
+}
+.ol-toggle-options {
+    z-index: 1000;
+    background: rgba(255,255,255,0.4);
+    border-radius: 4px;
+    padding: 2px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+#updateFilterButton, #resetFilterButton {
+    height: 22px;
+    width: 36px;
+    text-align: center;
+    text-decoration: none !important;
+    line-height: 22px;
+    position:relative;
+    margin: 10px 0 0 10px;
+    font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+    font-weight: bold !important;
+    background: rgba(0,60,136,0.5);
+    color: white !important;
+    padding: 2px;
+}
+.ol-toggle-options a {
+    background: rgba(0,60,136,0.5);
+    color: white;
+    display: block;
+    font-family: 'Lucida Grande',Verdana,Geneva,Lucida,Arial,Helvetica,sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    height: 22px;
+    line-height: 11px;
+    margin: 1px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 22px;
+    border-radius: 2px;
+}
+.ol-toggle-options a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0,60,136,0.7);
+}
+body {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Toolbar styles */
+#toolbar {
+    position: relative;
+    padding-bottom: 0.5em;
+}
+#toolbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#toolbar ul li {
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+}
+#toolbar ul li a {
+    font-weight: bold;
+    font-size: smaller;
+    vertical-align: middle;
+    color: black;
+    text-decoration: none;
+}
+#toolbar ul li a:hover {
+    text-decoration: underline;
+}
+#toolbar ul li * {
+    vertical-align: middle;
+}
+#map {
+    top: 5px;
+    left: 50px;
+
+    position: relative;
+    width: 95%;
+    height:80%;
+    background-color: #007bff;
+    border: 2px solid black;
+}
+
+#wrapper {
+    width: 768px;
+}
+#location {
+    float: right;
+}
+/* Styles used by the default GetFeatureInfo output, added to make IE happy */
+table.featureInfo, table.featureInfo td, table.featureInfo th {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    font-size: 70%;
+    padding: .2em .1em;
+}
+table.featureInfo th {
+    padding: .2em .2em;
+    font-weight: bold;
+    background: #eee;
+}
+table.featureInfo td {
+    background: #fff;
+}
+table.featureInfo tr.odd td {
+    background: #eee;
+}
+table.featureInfo caption {
+    text-align: left;
+    font-size: 100%;
+    font-weight: bold;
+    padding: .2em .2em;
+}
+.ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: 50px;
+    min-width: 280px;
+}
+.ol-popup:after, .ol-popup:before {
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+.ol-popup-closer:after {
+    content: "✖";
+}
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#btnPoint {
+    position: absolute;
+    top:  -500px;
+    left: 80px;
+}
+
+#btnLine {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+
+#btnArea {
+    position: absolute;
+    top: -500px;
+    left: 80px;
+}
+
+#btnEdit {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+#btnDelete {
+    position: absolute;
+    top: 10px;
+    left: 290px;
+}
+
+.btn-active {
+    background-color: #0d47a1 !important;
+}
+body {
+    padding:50px;
+    background-color:white;
+}
+select {
+    padding:12px;
+    width: 400px;
+    font-size: 20px;
+    font-family: "Verdana";
+    text-align:center;
+    text-align:center;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    border-radius:20px;
+    -webkit-box-shadow: 0 15px 0 #ccc, 0 -12px #fff inset;
+    -moz-box-shadow: 0 15px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #cccccc;
+    color:black;
+    border: activeborder;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: list-menu;
+    cursor:pointer;
+}
+.div1 {
+    position: absolute;
+    overflow: hidden;
+    top: 10px;
+    left: 150px;
+    right: 200px;
+    width: 60%;
+    height: 400%;
+    background-color: white;
+    border: 1px solid #000000;
+    margin: 0 auto;
+}
+
+.div2 {
+    position: relative;
+    overflow: hidden;
+    top: 450px;
+    border: 1px solid #000000;
+    padding: 0px;
+    margin: 0 ;
+    width: 100%;
+    height: 200%;
+    background-color: white; 
+    visibility: visible;
+}
+

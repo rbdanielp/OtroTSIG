@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Openlayers/v3/ol.css" type="text/css">
+        <link rel="stylesheet" href="CSSs/newcss.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="location"></div>
+            <div id="scale"></div>
+            <div id="nodelist"></div>
+        </div> 
+        <div id="txt">
+        </div>
+        <div id="map">
+            <div class="ol-toggle-options ol-unselectable"><a title="Toggle options toolbar" onClick="toggleControlPanel()" href="#toggle">...</a> 
+                <script src="./map.js"></script>
+                <div id="toolbar" style="display: none;position:absolute; top:0; left:30px;">
+                    <input id="promociones" type="checkbox" value="unchecked">
+                    <ul>
+                        <li>
+                            <a style="color: #FFFFFF; stroke:{
+                                   text-shadow: -3px -3px 2px #000, 3px 3px 2px #000, -3px 3px 2px #000, 3px -3px 2px #000;
+                               }" > FeatureID:</a>
+                            <select id="filter" name="filter">
+                                <option  value="Hotel">Hotel</option>
+                                <option  value="Bar">Bar</option>
+                                <option value="Estadio">Estadio</option>
+                                <option  value="PuntoTuristico">Punto Turistico</option>
+                            </select>
+
+                            <a id="updateFilterButton" href="#" onClick="filters()" title="Apply filter">Apply</a>
+                            <a id="resetFilterButton" href="#"  title="Reset filter" onClick="resetFilter()">Reset</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="popup" class="ol-popup">
+                <div id="popup-closer"></div>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+
+
+        <div id="info" style="display: none;"></div>
+
+    </body>
+</html>
