@@ -12,6 +12,7 @@
   
   <!-- ACA HAY QUE AGREGAR TODAS LAS CLASES QUE TIENEN QUE PERSISTIR EN LA BD -->
   	<class>uy.tsig.grupo16.entidades.Usuario</class>
+  	<class>uy.tsig.grupo16.entidades.Administrador</class>
 
   
     <properties>
@@ -28,7 +29,8 @@
         
          <!-- DIALECTO DE HIBERNATE, HAY QUE DECIRLE CON MOTOR SE ESTA HABLANDO HIBERNATE -->
         <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
-        <property name="hibernate.hbm2ddl.auto" value="update" />        
+        <property name="hibernate.hbm2ddl.auto" value="update" />
+        <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>        
     </properties>
     
   </persistence-unit>

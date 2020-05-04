@@ -20,8 +20,7 @@ public class Controller  implements IPersistencia{
         Manejador.getEntityManager().persist(o);
         Manejador.getEntityManager().getTransaction().commit();
 
-        Manejador.getEntityManager().clear();//ver si no da problemas
-		
+//        Manejador.getEntityManager().clear();//ver si no da problemas	
 	}
 
 
