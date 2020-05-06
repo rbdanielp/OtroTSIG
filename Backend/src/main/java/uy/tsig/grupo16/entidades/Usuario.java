@@ -34,7 +34,7 @@ public abstract class Usuario implements Serializable {
     private String UsuarioPassword;
     
     @Column(nullable = false)
-    private String UsuarioRol;
+    private Rol UsuarioRol;
 
     
     
@@ -45,7 +45,7 @@ public abstract class Usuario implements Serializable {
 	}
 	
     
-	public Usuario(String usuarioId, String usuarioNombre, String usuarioPassword, String usuarioRol) {
+	public Usuario(String usuarioId, String usuarioNombre, String usuarioPassword, Rol usuarioRol) {
 		super();
 		UsuarioId = usuarioId;
 		UsuarioNombre = usuarioNombre;
@@ -83,11 +83,11 @@ public abstract class Usuario implements Serializable {
 		UsuarioPassword = usuarioPassword;
 	}
 
-	public String getUsuarioRol() {
+	public Rol getUsuarioRol() {
 		return UsuarioRol;
 	}
 
-	public void setUsuarioRol(String usuarioRol) {
+	public void setUsuarioRol(Rol usuarioRol) {
 		UsuarioRol = usuarioRol;
 	}
     

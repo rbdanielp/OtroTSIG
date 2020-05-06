@@ -17,7 +17,7 @@ public class Administrador  extends Usuario implements Serializable {
 //        super(id, usuario, pwd, rol);
 //    }
     
-    public Administrador(String id, String usuario, String pwd, String rol) {
+    public Administrador(String id, String usuario, String pwd, Rol rol) {
         super(id, usuario, pwd, rol);
     }
 	

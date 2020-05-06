@@ -5,6 +5,8 @@ import uy.tsig.grupo16.logica.LogicaException;
 
 public interface IUsuario {
 
+	Usuario login(String nombreUsuario, String password) throws LogicaException;
+	
     Usuario buscarUsuario(String nombreUsuario) throws LogicaException;
     
     //Usuario buscarUsuarioId(String id) throws LogicaException;
