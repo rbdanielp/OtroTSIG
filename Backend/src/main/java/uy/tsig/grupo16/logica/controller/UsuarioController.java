@@ -32,7 +32,7 @@ public class UsuarioController implements IUsuario  {
         FachadaPersistencia.getPersistencia().alta(u);
     }
 
-	@Override
+	
 	public Usuario login(String nombreUsuario, String password) throws LogicaException {
         Usuario u = buscarUsuario(nombreUsuario);
 
