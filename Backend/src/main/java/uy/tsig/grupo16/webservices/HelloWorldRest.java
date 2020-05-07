@@ -17,3 +17,4 @@ public class HelloWorldRest {
         return Response.ok("Hello World desde el API REST",MediaType.APPLICATION_JSON).build();   
     } 
 }
+ 
