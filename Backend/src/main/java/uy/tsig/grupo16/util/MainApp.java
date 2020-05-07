@@ -24,7 +24,7 @@ public class MainApp {
 			// int i = 1;
 			// usuario = new Administrador(i, "Primer", "Pwd", i);
 			Rol r = null;
-			String i = "1";
+			String i = "10";
 			usuario = new Administrador(i, "Usu"+i, "Pwd"+i, r.ADMINISTRADOR);
 
 			FachadaLogica.getUsuarioController().alta(usuario);
